@@ -1,7 +1,7 @@
 ROOT_DIR := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_PATH:= $(ROOT_DIR)
+LOCAL_PATH := $(ROOT_DIR)
 
 # ---------------------------------------------------------------------------------
 # 				Common definitons
@@ -30,7 +30,7 @@ libmm-vidc-inc      += $(TARGET_OUT_HEADERS)/qcom/display
 libmm-vidc-inc      += $(TOP)/hardware/qcom/media-caf/msm8916/libc2dcolorconvert
 libmm-vidc-inc      += $(TOP)/frameworks/av/include/media/stagefright
 libmm-vidc-inc      += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-libmm-vidc-inc      += $(call project-path-for,qcom-display)/libgralloc
+libmm-vidc-inc      += $(TOP)/hardware/qcom/display-caf/msm8916/libgralloc
 
 LOCAL_ADDITIONAL_DEPENDENCIES   := $(libmm-vidc-add-dep)
 
